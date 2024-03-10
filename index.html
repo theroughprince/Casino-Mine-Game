@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="walletDetailsContainer">
+      <div class="walletDetails">
+        <div class="balanceBG">
+          <span>$</span>
+          <span id="totalBalance">500</span>
+        </div>
+        <span class="balanceStyle">Balance</span>
+      </div>
+    </div>
+    <div class="outerContainer" id="outerContainer">
+      <div class="StatsContainer">
+        <div class="betAmountContainer">
+          <label class="StatsContainerTEXT">Amount: </label>
+
+          <input id="currentBet" class="currentBet" type="number" value="1" />
+          <button class="betAmountBTN" id="betLess" onClick="betLess()">
+            -
+          </button>
+          <button class="betAmountBTN" id="betMore" onClick="betMore()">
+            +
+          </button>
+        </div>
+        <div class="betAmountContainer">
+          <label class="StatsContainerTEXT">Mines: </label>
+          <input
+            id="maxMines"
+            class="currentBet"
+            type="number"
+            value="3"
+          /><button class="betAmountBTN" id="mineLess" onClick="mineLess()">
+            -
+          </button>
+          <button class="betAmountBTN" id="mineMore" onClick="mineMore()">
+            +
+          </button>
+        </div>
+        <button class="Cashout" id="CashoutBTN" onClick="Cashout()">
+          Cashout
+        </button>
+        <button class="Cashout" id="reload" onclick="Reload()">Start</button>
+        <h1 class="multiplier" id="multiplier">1x</h1>
+      </div>
+      <div class="container" id="container">
+        <div class="hiddenContainer" id="hiddenContainer">
+          <h1 id="endScreen" class="endScreen">Game Over</h1>
+        </div>
+        <button class="boxes" id="box1" onClick="Reveal(1)"></button>
+        <button class="boxes" id="box2" onClick="Reveal(2)"></button>
+        <button class="boxes" id="box3" onClick="Reveal(3)"></button>
+        <button class="boxes" id="box4" onClick="Reveal(4)"></button>
+        <button class="boxes" id="box5" onClick="Reveal(5)"></button>
+        <button class="boxes" id="box6" onClick="Reveal(6)"></button>
+        <button class="boxes" id="box7" onClick="Reveal(7)"></button>
+        <button class="boxes" id="box8" onClick="Reveal(8)"></button>
+        <button class="boxes" id="box9" onClick="Reveal(9)"></button>
+        <button class="boxes" id="box10" onClick="Reveal(10)"></button>
+        <button class="boxes" id="box11" onClick="Reveal(11)"></button>
+        <button class="boxes" id="box12" onClick="Reveal(12)"></button>
+        <button class="boxes" id="box13" onClick="Reveal(13)"></button>
+        <button class="boxes" id="box14" onClick="Reveal(14)"></button>
+        <button class="boxes" id="box15" onClick="Reveal(15)"></button>
+        <button class="boxes" id="box16" onClick="Reveal(16)"></button>
+        <button class="boxes" id="box17" onClick="Reveal(17)"></button>
+        <button class="boxes" id="box18" onClick="Reveal(18)"></button>
+        <button class="boxes" id="box19" onClick="Reveal(19)"></button>
+        <button class="boxes" id="box20" onClick="Reveal(20)"></button>
+        <button class="boxes" id="box21" onClick="Reveal(21)"></button>
+        <button class="boxes" id="box22" onClick="Reveal(22)"></button>
+        <button class="boxes" id="box23" onClick="Reveal(23)"></button>
+        <button class="boxes" id="box24" onClick="Reveal(24)"></button>
+        <button class="boxes" id="box25" onClick="Reveal(25)"></button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

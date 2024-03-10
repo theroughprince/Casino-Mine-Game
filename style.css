@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+
+:root {
+  --bodyBG: linear-gradient(to right, #1a2c38, #071824);
+  --walletBTN: #2868d4;
+  --Boxes: #2e4453;
+  --BoxesHover: #445f70;
+  --BoxesOpen: #0a141b;
+  --textDark: #04090b;
+  --textLight: #e4e8f1;
+  --purple: #9908ed;
+  --success: linear-gradient(to right, #9ce255, #5ac450);
+}
+body {
+  background: var(--bodyBG);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.outerContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 10px;
+  width: 600px;
+  height: 600px;
+}
+.hiddenContainer {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background-color: #04090b00;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  z-index: 5;
+}
+.endScreen {
+  background-color: #071824;
+  color: var(--textLight);
+  box-shadow: 0px 0px 200px 0px #01e700;
+  border: 3px solid;
+  border-color: var(--success);
+  color: #01e700;
+  padding: 30px 40px 30px 40px;
+  border-radius: 12px;
+  font-size: xx-large;
+  text-align: center;
+  display: none;
+}
+.boxes {
+  background-color: var(--Boxes);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in;
+}
+.boxes:hover {
+  background-color: var(--BoxesHover);
+  scale: 1.05;
+}
+
+button {
+  border: none;
+}
+.Cashout {
+  background-color: #01e700;
+  padding: 10px;
+  font-size: x-large;
+  color: var(--textDark);
+  border-radius: 10px;
+  width: 100%;
+}
+.StatsContainer {
+  background-color: var(--Boxes);
+  width: 350px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+/* .betAmountContainerOuter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--textDark);
+  border-radius: 5px;
+  padding: 5px;
+} */
+.betAmountContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: var(--BoxesOpen);
+  padding: 5px;
+  border-radius: 5px;
+}
+.currentBet {
+  color: var(--textDark);
+  font-size: xx-large;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.betAmountBTN {
+  background-color: var(--BoxesOpen);
+  padding: 10px 20px 10px 20px;
+  max-height: 100%;
+  font-size: x-large;
+  color: var(--textLight);
+}
+.StatsContainerTEXT {
+  padding-inline: 5px;
+  width: 50%;
+  color: var(--BoxesHover);
+  font-weight: bolder;
+}
+.walletDetailsContainer {
+  display: flex;
+  justify-content: center;
+}
+.walletDetails {
+  background-color: var(--BoxesOpen);
+  height: 40px;
+  width: 200px;
+  color: var(--textLight);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+.balanceStyle {
+  background-color: var(--walletBTN);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.balanceBG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.multiplier {
+  font-size: 100px;
+  color: var(--success);
+}
+
+@media (max-width: 1000px) {
+  .outerContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    width: 80vw;
+    height: 80vw;
+  }
+  .hiddenContainer {
+    position: absolute;
+    width: 80vw;
+    height: 80vw;
+    background-color: #04090b00;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    z-index: 5;
+  }
+  .StatsContainer {
+    background-color: var(--Boxes);
+    width: 80vw;
+    height: 100vw;
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 25px;
+  }
+}
